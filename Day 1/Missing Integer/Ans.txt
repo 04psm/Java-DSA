@@ -1,0 +1,23 @@
+import java.util.*;
+   public class Main{
+      public static void main(String[] args){
+         Scanner input = new Scanner(System.in);
+        String[] arr = input.nextLine().split(" ");
+        int n = arr.length; 
+        int [] array1 = new int[n];
+        int sum  = 0 ; 
+        int z = array1.length + 1 ;
+        
+        for(int i = 0 ; i<n ; i++){
+            array1[i] = Integer.parseInt(arr[i]) ;
+            sum += array1[i];
+        }
+        int sum2 = 0 ;
+        sum2  = (z * (z+1)/2) ;
+        System.out.println(sum2 - sum );
+        // System.out.println(Arrays.toString(array1));
+        // for(int e : array1){
+        //     System.out.print(e + " ");
+        // }
+    }
+}
